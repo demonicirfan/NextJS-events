@@ -12,6 +12,7 @@ const EventDetailsPage = () => {
   const eventId = router.query.eventId;
   const event = getEventById(eventId);
 
+  //condition
   if (!event) {
     return <p>No event found!</p>;
   }
