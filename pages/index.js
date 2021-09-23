@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <div>
       <ul>
-        <EventList />
+        <EventList items={featuredEvents}/>
       </ul>
     </div>
   );
