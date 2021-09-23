@@ -1,7 +1,16 @@
+// inside dummy data we have a funciton that reurn DUMMY_EVENTS.filter((event)=>event.isFeatured)
+import { getFeaturedEvents } from "../dummy-data";
+
+
 const HomePage = () => {
+    const featuredEvents = getFeaturedEvents();
+
+
     return (
         <div>
-            <h1>Home Page</h1>
+            <ul>
+                
+            </ul>
         </div>
     )
 }
