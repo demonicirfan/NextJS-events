@@ -1,9 +1,22 @@
-const EventList = (props) => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+import EventItem from './event-item';
 
-export default EventList
+const EventList = (props) => {
+  const { items } = props;
+
+  return (
+    <div>
+      {items.map((event) => (
+        <EventItem
+          key={event.id}
+          id={event.id}
+          title={event.title}
+          locaiton={event.location}
+          date={event.date}
+          image={event.image}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default EventList;

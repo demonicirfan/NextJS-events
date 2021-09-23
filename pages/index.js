@@ -1,18 +1,17 @@
 // inside dummy data we have a funciton that reurn DUMMY_EVENTS.filter((event)=>event.isFeatured)
-import { getFeaturedEvents } from "../dummy-data";
-
+import EventList from '../components/events/event-list';
+import { getFeaturedEvents } from '../dummy-data';
 
 const HomePage = () => {
-    const featuredEvents = getFeaturedEvents();
+  const featuredEvents = getFeaturedEvents();
 
+  return (
+    <div>
+      <ul>
+        <EventList />
+      </ul>
+    </div>
+  );
+};
 
-    return (
-        <div>
-            <ul>
-                
-            </ul>
-        </div>
-    )
-}
-
-export default HomePage
+export default HomePage;
