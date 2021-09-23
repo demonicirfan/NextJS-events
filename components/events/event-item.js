@@ -14,7 +14,7 @@ const EventItem = (props) => {
 
   return (
     <li>
-      <img src={'/' + image} alt='' />
+      <img src={'/' + image} alt={title} />
       <div>
         <div>
           <h2>{title}</h2>
